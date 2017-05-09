@@ -1,5 +1,5 @@
 # computational_chemistry_tools
-[terminal_plot.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/terminal_plot.py): Python script for plotting data in terminal, useful for ssh login. 
+[terminal_plot.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/terminal_plot.py): Python script for text-based plotting data in terminal, useful for ssh login. 
 
 Sometimes people can only connect to remote server via ssh. To check the data generated on the remote server, one has to download these data. terminal_plot can directly display these data on the terminal to check whether is necessary to download these for further analysis.
 
