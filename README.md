@@ -1,5 +1,5 @@
 # computational_chemistry_tools
-Some script for computationla chmeitry.
+Some scripts for computationla chmeitry.
 ## [Amber](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/Amber): scripts relate with [Amber Molecular Dynamics simulation software](http://ambermd.org/).
 
 ## [PDB](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/PDB): scripts relate with [RCSB PDB file](http://www.rcsb.org/pdb/home/home.do).
