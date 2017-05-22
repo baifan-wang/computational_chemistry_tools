@@ -11,9 +11,9 @@ Some scripts for computationla chmeitry.
 
 Sometimes people can only connect to remote server via ssh. To check the data generated on the remote server, one has to download these data. terminal_plot can directly display these data on the terminal to check whether is necessary to download these for further analysis.
 
-Usage: 
-'''python
+Usage:     
+'''python    
 python terminal_plot.py data.dat data_column 
-'''
+'''    
 in which "data_column" specify which column data to plot(normally the first column (column 0) is used as x values, the second column (column 1) is the first y values).
 ![image](https://raw.githubusercontent.com/baifan-wang/computational_chemistry_tools/master/image/terminal_plot.png)
