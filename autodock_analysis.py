@@ -26,10 +26,10 @@ def dlg_parser(dlg):
                 the coordiantes of the lowest energy structure of each sluster and sotre in lowest_pdb;
                 and the rms value of the dlg.'''
     name = os.path.split(dlg)[1][:-4]  #strip the '.dlg' form 'name.dlg'
-    coords = {} #a dict to store the {run:[energy, Ki, [coordinate]]}, coordiante = coords[run][2]
-    cluster_data = [] #cluster_rank, lowest_energy, #run, mean_energy, num_in_cluster
-    rmsd_dict = {} #like this {cluster_rank:[['rank in cluster', 'run', 'energy', 'rmsd in cluster', 'rmsd to ref'],}
-                    #run = rmsd_dict[cluster_rank][0][1]; energy = rmsd_dict[cluster_rank][0][2]
+    coords = {}                        #a dict to store the {run:[energy, Ki, [coordinate]]}, coordiante = coords[run][2]
+    cluster_data = []                  #cluster_rank, lowest_energy, #run, mean_energy, num_in_cluster
+    rmsd_dict = {}                     #such as {cluster_rank:[['rank in cluster', 'run', 'energy', 'rmsd in cluster', 'rmsd to ref'],}
+                                       #run = rmsd_dict[cluster_rank][0][1]; energy = rmsd_dict[cluster_rank][0][2]
     lines = dlg_loader(dlg)
     i = 0
     while i < len(lines):
@@ -95,7 +95,8 @@ def write_rmsd(rmsd_dict, output):
 def group_coordinate(coords, rmsd_dict, name, lowest=False):
     '''if lowest == False: group the coordinates of each run base on cluster 
         and write them to seperate file eg: aa_cluster_1.pdb.
-        if Ture: only write the lowest energy structure in each cluster into a pdb file. eg: xxx_lowest.pdb'''
+        if Ture: only write the lowest energy structure in each cluster into a pdb file. 
+        eg: xxx_lowest.pdb'''
     if lowest == False:
         for cluster in rmsd_dict:
             n = 1
