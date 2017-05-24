@@ -1,4 +1,4 @@
-[makePLANAR_RST.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/Amber/makePLANAR_RST.py): Generate the planarity restraint for the input base pair to be used in Amber calculation.    
+## [makePLANAR_RST.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/Amber/makePLANAR_RST.py): Generate the planarity restraint for the input base pair to be used in Amber calculation.    
 Usage: 
 ```python
 python makePLANAR_RST.py -i input_file -o output_file -res basepairs
@@ -12,3 +12,9 @@ input_file: base pair planarity definition file, eg:
 T 1 A 2    
 T 2 A 3    
 ...
+
+## [remd_rate_calculator.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/Amber/remd_rate_calculator.py): calculate the exchange in the Replica exchange molecular dynamics simulation (REMD).
+usage: 
+```python
+python rem_rate_calculator.py rem.log
+```
