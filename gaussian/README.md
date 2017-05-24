@@ -5,9 +5,8 @@ Usage:
 ```python
 python gauloganalysis.py -[-h] [-i gaussian log file] [-e] [-p] [-f] [-t] [-a]
 ```
-
--e: print energy values
--p: plot the energy values
--f: print frequency values
--t: print thermal energy values
--a: perform all of the actions above
+-e: print energy values    
+-p: plot the energy values   
+-f: print frequency values   
+-t: print thermal energy values    
+-a: perform all of the actions above    
