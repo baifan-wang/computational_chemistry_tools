@@ -18,3 +18,8 @@ Usage:
 ```python
 python pdbtoseq.py xxx.pdb
 ```
+## [splitnmr.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/PDB/splitnmr.py): A script to split each model of pdb into separate pdb file.
+Usage:  
+```python
+python splitnmr.py xxx.pdb
+```
