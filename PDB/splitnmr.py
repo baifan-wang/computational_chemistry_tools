@@ -1,7 +1,6 @@
 #!/usr/bin/env python3.5
 import os, sys
 
-_description__ = \
 """
 A script to split each model of pdb into separate pdb file.
 
