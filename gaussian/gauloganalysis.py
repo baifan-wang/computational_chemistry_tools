@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-A script data from Gaussian output log file.
+A script to extrat data from Gaussian calculated log file.
 
 Usage:  python gauloganalysis.py -[-h] [-i gaussian log file] [-e] [-p] [-f] [-t] [-a]
 """
