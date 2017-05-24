@@ -8,7 +8,7 @@ python makePLANAR_RST.py -res A 1 T 2 -i wc.txt -o wc.dist   #read base pair def
 python makePLANAR_RST.py -res A 1 T 2  #direct print the output 
 ```
 -res: input residues type for base pair, eg: G 1 G 2 G 3    
-input_file: base pair planarity definition file, eg:
+input_file: base pair planarity definition file, eg:    
 T 1 A 2    
 T 2 A 3    
 ...
