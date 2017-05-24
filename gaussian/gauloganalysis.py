@@ -71,10 +71,10 @@ if __name__=='__main__':
     import argparse
     parser = argparse.ArgumentParser(description='''Perfrom data extraction for the Gaussian log file.''')
     parser.add_argument('-i', help='the input file define the base pair')
-    parser.add_argument('-e', action="store_true", help='output energy values')
+    parser.add_argument('-e', action="store_true", help='print energy values')
     parser.add_argument('-p', action="store_true", help='plot the energy values')
-    parser.add_argument('-f', action="store_true", help='output frequency values')
-    parser.add_argument('-t', action="store_true", help='output thermal energy values')
+    parser.add_argument('-f', action="store_true", help='print frequency values')
+    parser.add_argument('-t', action="store_true", help='print thermal energy values')
     parser.add_argument('-a', action="store_true", help='perform all of the actions above')
     args = parser.parse_args()
     gaulog =args.i
