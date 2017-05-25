@@ -6,7 +6,8 @@ Some scripts for computationla chmeitry.
 
 ## [gaussian](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/gaussian): scripts to help process [gaussian](http://gaussian.com/) results log file.
 
-## [g4_cation.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/g4_cation.py): Add cation to the center of 2 G-quartets. Using the average coordinates of O6 atom of guanine base as the coordinates of cations. Deafult cation is K+.
+## [g4_cation.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/g4_cation.py): Add cation to the center of 2 G-quartets. 
+Using the average coordinates of O6 atom of guanine base as the coordinates of cations. Deafult cation is K+.
 Usage: 
 ```python
 python g_cation.py xxx.pdb  residue serial numbers in 1st G-quartet  2nd G-quaret ...
