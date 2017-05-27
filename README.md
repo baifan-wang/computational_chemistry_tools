@@ -34,7 +34,7 @@ Usage:
 python g_cation.py xxx.pdb  residue serial numbers in 1st G-quartet  2nd G-quaret ...
 ```
 eg: python g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12    
-in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet
+in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet. The cations will be added to the center of G-quartet 1-2-3-4 and 5-6-7-8 as well as the center of G-quartet 5-6-7-8 and 9-10-11-12
 
 ## [terminal_plot.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/terminal_plot.py): Python script for text-based plotting data in terminal, useful for ssh login. 
 
