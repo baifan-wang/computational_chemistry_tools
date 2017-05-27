@@ -10,22 +10,22 @@ Some scripts for computationla chmeitry.
 require: numpy, matplotlib
 Usage:
 ```python
-usage: autodock_analysis.py [-h] [-i I] [-p] [-o O] [-plot]
+usage: python autodock_analysis.py [-h] [-i I] [-p] [-o O] [-plot]
                             [-recluster [RECLUSTER [RECLUSTER ...]]] [-replot]
-optional arguments:
+'''optional arguments:
   -h, --help        show this help message and exit
-  -i I                  the input dlg file.
-  -p                   print the summary results in dlg.
-  -o O               the output file, coordinates generated in docking process will also be wrote.
+  -i I              the input dlg file.
+  -p                print the summary results in dlg.
+  -o O              the output file, coordinates generated in docking process will also be wrote.
                         
-  -plot                 plot the 'number in cluster' vs 'lowest of cluster'.
+  -plot             plot the 'number in cluster' vs 'lowest of cluster'.
   -recluster [RECLUSTER [RECLUSTER ...]]
-                        recluster the result based on the input rms value. User should provide rmsd cutoff and a new filename.
-                        eg: -recluster 4.0 xxx_recluster
-  -replot           plot the 'number in cluster' vs 'lowest of cluster' after recluster.
+                    recluster the result based on the input rms value. User should provide rmsd cutoff and a new filename.
+                    eg: -recluster 4.0 xxx_recluster
+  -replot           plot the 'number in cluster' vs 'lowest of cluster' after recluster.'''
 ```
-
-
+The recluster algorithm is as follow:    
+In the beginning the lowest energy conformation among all of the conformation will be used as the reference for the first cluster. The RMSD values of the remaining conformations with respect to reference will be computed. The conformations with RMSD values less than RMS cutoff will be grouped into first cluster. Then the reference will be the lowest energy conformation in the remaining conformations and process continue until all of the conformations are clustered. This process will generate new pdbs, lowest energy pdbs, rmsd_dict and cluster_data.    
 
 ## [g4_cation.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/g4_cation.py): Add cation to the center of 2 G-quartets. 
 Using the average coordinates of O6 atom of guanine base as the coordinates of cations. Deafult cation is K+.
