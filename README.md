@@ -16,7 +16,7 @@ usage: python autodock_analysis.py [-h] [-i I] [-p] [-o O] [-plot]
   -h, --help        show this help message and exit
   -i I              the input dlg file.
   -p                print the summary results in dlg.
-  -o O              the output file, coordinates generated in docking process will also be wrote.
+  -o O              the output file, coordinates generated in docking process will also be written.
                         
   -plot             plot the 'number in cluster' vs 'lowest of cluster'.
   -recluster [RECLUSTER [RECLUSTER ...]]
