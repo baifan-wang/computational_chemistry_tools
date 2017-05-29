@@ -3,7 +3,7 @@
 Add cations to the center of 2 G-quartets. Using the average coordinates of O6 atom of guanine
 base as the coordinates of cations. Deafult cation is K+.
 Usage: python g_cation.py xxx.pdb  residue serial numbers in 1st G-quartet  2nd G-quaret...
-eg: oython g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12
+eg: python g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12
 in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet
 '''
 __author__='Baifan Wang'
