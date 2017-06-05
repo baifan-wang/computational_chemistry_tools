@@ -32,7 +32,7 @@ In the beginning the lowest energy conformation among all of the conformations i
 Using the average coordinates of O6 atom of guanine base as the coordinates of cations. Deafult cation is K+.
 Usage: 
 ```python
-python g_cation.py xxx.pdb  residue serial numbers in 1st G-quartet  2nd G-quaret ...
+python g_cation.py xxx.pdb  residue_serial_numbers_of 1st_G-quartet 2nd_G-quaret
 ```
 eg: python g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12    
 in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet. The cations will be added to the center of G-quartet 1-2-3-4 and 5-6-7-8 as well as the center of G-quartet 5-6-7-8 and 9-10-11-12
