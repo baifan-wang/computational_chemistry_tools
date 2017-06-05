@@ -37,7 +37,7 @@ python g_cation.py xxx.pdb  residue_serial_numbers_of 1st_G-quartet 2nd_G-quaret
 eg: python g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12    
 in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet. The cations will be added to the center of G-quartet 1-2-3-4 and 5-6-7-8 as well as the center of G-quartet 5-6-7-8 and 9-10-11-12
 
-## [py_md5_sha256.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/py_md5_sha256.py): a simple python t compute the MD5 and SHA256 of a file.
+## [py_md5_sha256.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/py_md5_sha256.py): a simple python script to compute the MD5 and SHA256 of a file.
 Usage:
 ```python 
 python py_md5_sha256.py xxx.file
