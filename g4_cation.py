@@ -66,9 +66,8 @@ def write_new_pdb(pdb, cation_lines):
     with open(pdb,'w') as f:
         for line in old_lines:
             f.write(line)
-        for line in cation_lines:
-            f.write('TER   \n')
-            f.write(line+'\n')
+        f.write('TER   \n')
+        f.write(cation_line+'\n')
 
 if __name__=='__main__':
     pdb = sys.argv[1]
@@ -85,9 +84,8 @@ if __name__=='__main__':
             sys.exit()
 
     quartets = [quartets[i]+quartets[i+1] for i in range(len(quartets)-1)]
-    cation_line=[]
     for q in quartets:
         average = get_o6_average(pdb,q)
-        cation_line.append(get_cation_line(pdb, average))
-    write_new_pdb(pdb, cation_line)
+        cation_line = get_cation_line(pdb, average)
+        write_new_pdb(pdb, cation_line)
     print('K+ ion(s) have been add to the following pdb: %s' %pdb)
