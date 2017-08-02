@@ -22,7 +22,7 @@ python rem_rate_calculator.py rem.log
 ## [amd_generate.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/Amber/remd_rate_calculator.py): create sander/pmemd input file for Accelerated Molecular Dynamics(AMD).
 usage:
 ```python
-python amd_generate.py md.output residue_number atom_number
+python amd_generate.py md.output residue_number atom_number simulation_time(in ns)
 ```
 See the following for detail:    
 Running aMD requires the definition of few parameters. AMD parameters are determined based on previous knowledge of the system, which is easily acquirable by a short regular MD simulation, from which the average values of the potential and torsion energy can be estimated. From there, a given amount of energy per degree of freedom is added those values, in the form of multiples of alpha, setting the values of Ep and Ed to be used. The following example should help clarify this procedure.    
