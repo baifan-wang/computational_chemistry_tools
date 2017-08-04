@@ -34,3 +34,11 @@ Assuming you already have the following files:
 * map_added.DG-AMBER: MAP file for creating NOE and hydrogen bond restraint    
 * tordef.lib: library file for creating torsion restraint    
 The ‘map_added.DG-AMBER’ and ‘tordef.lib’ can be found in this repositoriy, as well as examples for the ‘noe.8col’, ‘hbond.8col’, ‘torsion.5col’ and ‘planarity.dist’.    
+
+## Perform simulated annealing simulation
+The 'md.in' is the input parameter file for running simulated annealing (SA) simulation using NMR restraints.
+The 'runmd.sh' is a script for running a batch SA simulation, asumming you have the amber topology and restart file '1.top' and '1.rst'. If you have different file name, edit the name="1"  line in ths script. You can set up, e.g., 100 SA simulation like this:
+```bash
+bash runmd.sh 100
+```
+After finished, 100 pdb files will be generated. Their energy, NMR restraint violation will be written in file ends with '.out', and statistics information will be presented in 'svionergy.txt'.
