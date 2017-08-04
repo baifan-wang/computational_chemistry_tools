@@ -316,6 +316,7 @@ CYT	EPSILN	C4'	C3'	O3'	P+
 # PSEUDO-ROTATION PHASE defined in terms of the NU angles
 PSEUDO	CYT	PPA	NU0	NU1	NU2	NU3	NU4
 
+# protonated adenine residues
 DAP     ALPHA   O3'-    P       O5'     C5'
 DAP     BETA    P       O5'     C5'     C4'
 DAP     GAMMA   O5'     C5'     C4'     C3'
@@ -331,3 +332,5 @@ DAP     CHI     O4'     C1'     N9      C4
 # alternative spelling
 DAP     EPSILON C4'     C3'     O3'     P+
 DAP     EPSILN  C4'     C3'     O3'     P+
+# PSEUDO-ROTATION PHASE defined in terms of the NU angles
+PSEUDO	DAP	PPA	NU0	NU1	NU2	NU3	NU4
