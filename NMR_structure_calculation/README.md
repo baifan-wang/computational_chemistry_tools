@@ -8,6 +8,16 @@ tleap -f leap.in
 check if '1.top', '1.crd' and '1.pdb' are created. Check the '1.pdb' using Chimera or pymol.
 
 ## Minimization of initial structure.
+The 'min.in' is the input parameter file for running minimization using sander or pmemd in amber.
+Minimize your initial structure using the following command:
+```bash
+pmemd.cuda -O -i min.in -p 1.top -c 1.crd -r 1.rst -o min.out
+```
+Assuming you have the GPU-accelerated pmemd programm. Otherwise you can use 'sander', 'pememd', 'sander.MPI' or 'pmemd.MPI'.
+This minimization will create the minimized coordinate '1.rst'. You can convert it into pdb file using:
+```bash
+ambpdb -p 1.top -c 1.rst >1.pdb
+```
 
 ## Create restraints.
 [make_restraint.sh]( https://github.com/baifan-wang/computational_chemistry_tools/blob/master/NMR_structure_calculation/make_restraint.sh): script to make restraint file. The restraint including NOE and hydrogen bond distance restraints, torsion angle restraint, planarity restraints (optional) and chirality restraint. The final restraint file created by this script is ‘RST.dist’. Usage:    
