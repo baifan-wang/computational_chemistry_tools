@@ -1,3 +1,4 @@
+This repository provide protocol and scripts for simulated annealing simulation for NMR structure calculation.    
 ## Create initial strcuture. 
 Here the initial strucutre are created by 'leap' programm in amber. The 'leap.in' is a script containing the commands to load force field parameters, create initial structure, save files, etc. The current 'leap.in' is designed for the DNA molecule using the 'ff-nucleic-OL15' force field (see http://fch.upol.cz/ff_ol/downloads.php for detail). One can download these force field in this repository('ff-nucleic-OL15.frcmod' and 'ff-nucleic-OL15.lib') or from  http://fch.upol.cz/ff_ol/downloads.php.    
 First you need to edit 'leap.in', input the sequence of your structure in {} in this line: "aaa = sequence {DG5 DG DG DG3}".    
