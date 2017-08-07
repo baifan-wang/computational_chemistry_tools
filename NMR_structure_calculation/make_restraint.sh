@@ -17,7 +17,7 @@ fi
 
 if [ ! -f tordef.lib ];
 then
-        echo "ERROR: map_added.DG-AMBER not found!"
+        echo "ERROR: tordef.lib not found!"
         exit
 fi
 
@@ -32,3 +32,4 @@ sed -i 's/rk2 =   2.0, rk3 =   2.0/rk2 =   200.0, rk3 =   200.0/g' torsion.dist
 makeCHIR_RST $name.pdb chir.dist
 sed -i 's/rk2 = 10., rk3=10./rk2 = 100., rk3 = 100./g' chir.dist
 cat noe.dist hbond.dist torsion.dist planarity.dist chir.dist >>RST.dist
+echo "Restraint file: RST.dist has been successfully created!"
