@@ -14,7 +14,7 @@ Minimize your initial structure using the following command:
 ```bash
 pmemd.cuda -O -i min.in -p 1.top -c 1.crd -r 1.rst -o min.out
 ```
-Assuming you have the GPU-accelerated pmemd programm. Otherwise you can use 'sander', 'pememd', 'sander.MPI' or 'pmemd.MPI'.
+Assuming you have the GPU-accelerated pmemd programm. Otherwise you can use 'sander', 'pmemd', 'sander.MPI' or 'pmemd.MPI'.
 This minimization will create the minimized coordinate '1.rst'. You can convert it into pdb file using:
 ```bash
 ambpdb -p 1.top -c 1.rst >1.pdb
