@@ -132,11 +132,11 @@ def creat_PMF(num_stage, output):
       with open(output, "w") as f:
         addval=0.0
         for stage in range(1, num_stage+1):
-            rec_coord, work=loadtxt("jar.stage%02d.dat" % stage, usecols=(0,1), unpack=True)
+            rec_coord, work = np.loadtxt("jar.stage%02d.dat" % stage, usecols=(0,1), unpack=True)
             for coord, workval in zip(rec_coord, work):
                 f.write("%s %s\n" % (coord, workval))
-            value=int(len(work))-1 
-            addval=float(work[value])
+            value = int(len(work))-1 
+            addval = float(work[value])
 
 
 def write_log(log, s):
@@ -172,7 +172,7 @@ def run(num_asmd, num_stage, start_distance, step, restart, TEMP=300):
         write_jar_output(jar_file, jar_avg, rec_coord)
         restart = get_restart_by_asmdfile(asmdfile)
         write_log(log, 'Restart file for next batch job is: %s' %restart)
-        time.sleep(3000)
+        time.sleep(30)
     creat_PMF(num_stage, 'jar.dat')
     write_log(log, 'Wrote PMF data to: jar.dat')
     t2 = time.time()
