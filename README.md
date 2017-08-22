@@ -2,8 +2,6 @@
 Some scripts for computationla chmeitry.
 ## [Amber](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/Amber): scripts relate with [Amber Molecular Dynamics simulation software](http://ambermd.org/).
 
-## [NMR_structure_calculation](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/NMR_structure_calculation): scripts and protocol for NMR structure calculation based on NOE and other restraints using Amber.
-
 ## [PDB](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/PDB): scripts relate with [RCSB PDB file](http://www.rcsb.org/pdb/home/home.do).
 
 ## [gaussian](https://github.com/baifan-wang/computational_chemistry_tools/tree/master/gaussian): scripts to help process [gaussian](http://gaussian.com/) results log file.
