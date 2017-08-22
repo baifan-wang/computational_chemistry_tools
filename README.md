@@ -28,14 +28,7 @@ usage: python autodock_analysis.py [-h] [-i I] [-p] [-o O] [-plot]
 The recluster algorithm is as follow:    
 In the beginning the lowest energy conformation among all of the conformations is used as the reference for the first cluster. The RMSD values of the remaining conformations with respect to reference will be computed. The conformations with RMSD values less than RMS cutoff will be grouped into first cluster. Then the reference will be the lowest energy conformation in the remaining conformations. This procedure will recursively continue until all of the conformations are clustered. It will generate new pdbs, lowest energy pdbs, rmsd_dict and cluster_data.    
 
-## [g4_cation.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/g4_cation.py): Add cation to the center of 2 G-quartets. 
-Using the average coordinates of O6 atom of guanine base as the coordinates of cations. Deafult cation is K+.
-Usage: 
-```python
-python g_cation.py xxx.pdb  residue_serial_numbers_of 1st_G-quartet 2nd_G-quaret
-```
-eg: python g_cation.py xxx.pdb 1,2,3,4  5,6,7,8  9,10,11,12    
-in which the 1,2,3,4 are the residue serial numbers in 1st G-quartet. The cations will be added to the center of G-quartet 1-2-3-4 and 5-6-7-8 as well as the center of G-quartet 5-6-7-8 and 9-10-11-12
+
 
 ## [py_md5_sha256.py](https://github.com/baifan-wang/computational_chemistry_tools/blob/master/py_md5_sha256.py): a simple python script to compute the MD5 and SHA256 of a file.
 Usage:
